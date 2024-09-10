@@ -10,3 +10,8 @@ main {
     padding: 20px;
     padding-top: 8rem;
 }
+
+a {
+    color: #333;
+    text-decoration: none;
+}
