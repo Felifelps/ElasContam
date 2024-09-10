@@ -9,6 +9,7 @@ header {
     align-content: center;
     align-items: center;
     background-color: #0C0E2F;
+    z-index: 100;
 }
 
 header img {
