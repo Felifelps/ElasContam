@@ -1,12 +1,14 @@
-/* Estilo do cabeçalho */
 header {
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 7em;
+    height: 7rem;
     display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
     background-color: #0C0E2F;
-    position: relative; /* Adiciona posição relativa para o menu hambúrguer */
 }
 
 header img {
@@ -19,17 +21,17 @@ header ul {
     list-style-type: none;
     display: flex;
     align-items: center;
-    padding: 0;
-    margin: 0;
+    align-content: space-around;
 }
 
 header ul li {
-    height: 80%;
     display: flex;
+    padding: 0px 40px;
+    height: 7em;
     align-items: center;
-    padding: 10px 20px;
     color: white;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 header ul li:hover {
@@ -40,76 +42,13 @@ header ul .current-page {
     background-color: #171C65;
 }
 
-/* Menu hambúrguer */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    position: absolute;
-    right: 20px;
-}
-
-.menu-toggle div {
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-    transition: 0.3s;
-}
-
-/* Menu responsivo */
-.header-menu {
-    display: flex;
-}
-
-.header-menu.open {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 7em; /* Ajuste conforme necessário */
-    right: 0;
-    width: 100%;
-    background-color: #0C0E2F;
-    border-top: 1px solid #4A3084;
-}
-
-.header-menu.closed {
-    display: none;
-}
-
-/* Estilo dos links no menu hambúrguer */
-.header-menu ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-}
-
-.header-menu ul li {
-    padding: 15px 20px;
-    text-align: center;
-}
-
-/* Responsividade */
 @media (max-width: 768px) {
     header img {
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 0px;
     }
 
-    header ul {
-        display: none;
-        width: 100%;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .header-menu {
-        display: none;
-    }
-    
-    .header-menu.open {
-        display: flex;
+    header ul li {
+        padding: 0px 5px;
     }
 }
