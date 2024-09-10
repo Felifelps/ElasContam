@@ -25,7 +25,7 @@ header ul {
     align-content: space-around;
 }
 
-header ul li {
+header a {
     display: flex;
     padding: 0px 40px;
     height: 7em;
@@ -33,13 +33,15 @@ header ul li {
     color: white;
     transition: 0.3s;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
-header ul li:hover {
+header a:hover {
     background-color: #4A3084;
 }
 
-header ul .current-page {
+header .current-page {
     background-color: #171C65;
 }
 
