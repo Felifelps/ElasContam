@@ -1,13 +1,20 @@
-.services {
+.services, .service-info {
     display: flex;
     flex-wrap: wrap;
     padding: 30px 0px;
 }
 
+.service-info img {
+    float: left;
+}
+
 .service-card {
     margin-bottom: 10px;
-    border-top: #333 solid 1px;
     width: 450px;
+}
+
+.service-card, .service-info {
+    border-top: #333 solid 1px;
 }
 
 .image-and-button {
