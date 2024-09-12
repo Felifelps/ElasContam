@@ -8,6 +8,6 @@ setInterval(() => {
         image.src = `./images/carrossel-${current}.png`;
         image.alt = `Imagem ${current}`;
         image.style.opacity = 1;
-    }, 1700) // 1.7 seconds
+    }, 1200) // 1.2 seconds
     current = current === 3 ? 1 : current + 1;
 }, 10000); // 10 seconds

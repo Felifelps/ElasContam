@@ -12,7 +12,7 @@
 .carousel-img {
     width: 450px;
     height: 450px;
-    transition: all 1.5s;
+    transition: all 1s;
 }
 
 .invisible {
